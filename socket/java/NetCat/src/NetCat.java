@@ -1,5 +1,4 @@
 
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -53,8 +52,7 @@ public class NetCat {
 		transferStreams(socket);
 	}
 
-	private static void transferStreams(Socket socket) throws IOException,
-			InterruptedException {
+	private static void transferStreams(Socket socket) throws IOException, InterruptedException {
 		InputStream input1 = System.in;
 		OutputStream output1 = socket.getOutputStream();
 		InputStream input2 = socket.getInputStream();
