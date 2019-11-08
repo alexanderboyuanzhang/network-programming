@@ -12,7 +12,7 @@ public class GreetingServer extends Thread {
 
 	public GreetingServer(int port) throws IOException {
 		serverSocket = new ServerSocket(port);
-		serverSocket.setSoTimeout(1000000);
+		serverSocket.setSoTimeout(10000);
 	}
 
 	public void run() {
